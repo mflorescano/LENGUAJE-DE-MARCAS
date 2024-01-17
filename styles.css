@@ -103,6 +103,9 @@ thead {
 }
 
 /* Media queries para responsividad. Aún no hemos dado esto y solamente lo quiero mencionar. Busca su significado */
+/* aplicar estilos diferentes a un documento HTML en función de las características del 
+dispositivo en el que se visualiza la página, 
+principalmente basándose en el tamaño de la pantalla y la resolución. */
 @media (max-width: 600px) {
     body {
         background-color: #e3f2fd;

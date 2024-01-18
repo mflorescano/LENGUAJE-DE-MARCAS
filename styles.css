@@ -28,7 +28,9 @@ article header time {
     font-style: inherit;
     color: #f4f4f4;
 }
-
+p{
+    font-size: 20px;
+}
 /* Estilos para las secciones */
 section {
     background-color: #fff;
@@ -100,7 +102,7 @@ th, td {
 }
 
 thead {
-    background-color: #007bff;
+    background-color: #771616dc;
     color: #fff;
 }
 

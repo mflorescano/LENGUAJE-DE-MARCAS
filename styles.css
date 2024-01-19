@@ -1,38 +1,42 @@
 /* Estilos globales */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    font-family: "Georgia, serif";
+    line-height: 1.7;
+    margin: 1em;
+    padding: 2em;
+    background-image: url(https://www.katebackdrop.es/cdn/shop/products/BH1039838U_1024x1024.jpg?v=1664414813);
     color: #333;
 }
 
 /* Estilo para el encabezado del artículo */
 article header {
-    background-color: #007bff;
-    color: #fff;
-    padding: 1em 0;
+    background-color: #684444;
+    color: #fcfafa;
+    padding: 1em;
     text-align: center;
+    border-radius: 0.5em;
 }
 
 /* Títulos */
-h1, h2 {
-    margin-bottom: 0.5em;
+h1, h2{
+    margin-bottom: 0em;
+    text-align: right;
 }
 
 /* Fecha del artículo */
 article header time {
-    font-style: italic;
+    font-style: inherit;
     color: #f4f4f4;
 }
-
+p{
+    font-size: 20px;
+}
 /* Estilos para las secciones */
 section {
     background-color: #fff;
     margin: 1em;
     padding: 1em;
-    border-radius: 10px;
+    border-radius:15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
@@ -42,7 +46,7 @@ ul {
 }
 
 ul ul {
-    list-style-type: circle;
+    list-style-type:circle;
 }
 
 /* Estilos para el formulario */
@@ -98,7 +102,7 @@ th, td {
 }
 
 thead {
-    background-color: #007bff;
+    background-color: #771616dc;
     color: #fff;
 }
 

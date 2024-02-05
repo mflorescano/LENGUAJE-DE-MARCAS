@@ -1,121 +1,69 @@
-/* Estilos globales */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+/* Selector de etiqueta: afecta a todos los elementos <p> */
+p {
+    color: blue;
 }
 
-/* Estilo para el encabezado del artículo */
-article header {
-    background-color: #007bff;
-    color: #fff;
-    padding: 1em 0;
-    text-align: center;
+/* Selector de clase: afecta a todos los elementos con la clase "texto" */
+.texto {
+    font-size: 16px;
 }
 
-/* Títulos */
-h1, h2 {
-    margin-bottom: 0.5em;
+/* Selector de ID: afecta solo al elemento con el ID "tituloPrincipal" */
+#tituloPrincipal {
+    font-weight: bold;
 }
 
-/* Fecha del artículo */
-article header time {
+/* Selector universal: afecta a todos los elementos en el documento */
+* {
+    box-sizing: border-box;
+}
+
+/* Selector de combinador de descendiente: afecta a <p> dentro de <div> */
+div p {
+    color: green;
+}
+
+/* Selector de hijo directo: afecta a los <li> que son hijos directos de <ul> */
+ul > li {
+    list-style-type: none;
+}
+
+/* Selector de adyacente directo: afecta al primer <p> después de cualquier .texto */
+.texto + p {
     font-style: italic;
-    color: #f4f4f4;
 }
 
-/* Estilos para las secciones */
-section {
-    background-color: #fff;
-    margin: 1em;
-    padding: 1em;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+/* Selector de hermano general: afecta a todos los <p> precedidos por .texto */
+.texto ~ p {
+    border: 1px solid black;
 }
 
-/* Estilos para listas */
-ul {
-    padding-left: 20px;
+/* Selector de atributo: afecta a los elementos <input> con el atributo "type" igual a "text" */
+input[type="text"] {
+    background-color: #f0f0f0;
 }
 
-ul ul {
-    list-style-type: circle;
+/* Pseudoclase: afecta al primer <li> dentro de un <ul> */
+ul li:first-child {
+    font-weight: bold;
 }
 
-/* Estilos para el formulario */
-form {
-    background-color: #f8f9fa;
-    padding: 1em;
-    border-radius: 8px;
+/* Pseudoelemento: añade contenido después de los elementos .texto */
+.texto::after {
+    content: " (texto destacado)";
 }
 
-form label {
-    display: block;
-    margin-bottom: 0.5em;
+/* Pseudoclase de acción: cambia el color de fondo de los enlaces al pasar el mouse */
+a:hover {
+    background-color: yellow;
 }
 
-form input[type="text"],
-form input[type="email"],
-form textarea {
-    width: 100%;
-    padding: 0.5em;
-    margin-bottom: 1em;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+/* Selector de clase con múltiples clases: afecta a elementos con ambas clases "enlace" y "especial" */
+.enlace.especial {
+    color: red;
 }
 
-form input[type="submit"] {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 0.7em 2em;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-form input[type="submit"]:hover {
-    background-color: #218838;
-}
-
-/* Estilos para tablas */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1em;
-}
-
-table, th, td {
-    border: 1px solid #ddd;
-}
-
-th, td {
-    text-align: left;
-    padding: 8px;
-}
-
-thead {
-    background-color: #007bff;
-    color: #fff;
-}
-
-/* Media queries para responsividad. Aún no hemos dado esto y solamente lo quiero mencionar. Busca su significado */
-/* aplicar estilos diferentes a un documento HTML en función de las características del 
-dispositivo en el que se visualiza la página, 
-principalmente basándose en el tamaño de la pantalla y la resolución. */
-@media (max-width: 600px) {
-    body {
-        background-color: #e3f2fd;
-    }
-
-    article header {
-        padding: 0.5em 0;
-    }
-
-    form input[type="submit"] {
-        width: 100%;
-    }
+/* Selector de atributo con coincidencia parcial: afecta a elementos con un atributo title que contenga "Titulo" */
+*[title*="Titulo"] {
+    font-style: italic;
 }

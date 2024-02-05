@@ -1,91 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML 101 para mi equipazo de Linkia</title>
+    <title>Documentación de Selectores CSS</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <!-- Con CTRL K Y LUEGO C, HACES UN COMENTARIO COMO ESTE -->
-    <!-- Tipos de selectores
-Element     Class     ID
--->
-<!-- Para formatear tu código, pulsa SHIFT(FLECHITA IZDA) + ALT + F -->
-    <!-- Artículo con varias secciones -->
-    <article>
-
-        <!-- Encabezado del artículo -->
-        <header>
-            <h1>Título del Artículo</h1>
-            <p><time datetime="2024-01-17">17 de Enero, 2024</time></p>
-        </header>
-
-        <!-- Contenido principal del artículo -->
-        <section>
-            <h2>Subtítulo del Artículo</h2>
-            <p>Este es el primer párrafo del artículo.</p>
-            <p>Este es el segundo párrafo del artículo.</p>
-
-            <!-- Lista anidada -->
-            <ul>
-                <li>Primer ítem
-                    <ul>
-                        <li>Subítem 1</li>
-                        <li>Subítem 2</li>
-                    </ul>
-                </li>
-                <li>Segundo ítem</li>
-            </ul>
-        </section>
-
-        <!-- Sección con un formulario -->
-        <section>
-            <h2>Formulario de Contacto</h2>
-            <form action="submit.html" method="post">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
-                <input type="submit" value="Enviar">
-            </form>
-        </section>
-
-        <!-- Sección con una tabla -->
-        <section>
-            <h2>Tabla de Información</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Nombre</th>
-                        <th>Edad</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Juan</td>
-                        <td>30</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Maria</td>
-                        <td>25</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-    </article>
-
+    <h1 id="tituloPrincipal">Selectores CSS</h1>
+    <p class="texto">Este es un texto de ejemplo para demostrar selectores de clase.</p>
+    <p>Este párrafo no tiene clase asignada.</p>
+    <a href="#" class="enlace especial">Enlace especial</a>
+    <input type="text" placeholder="Selector de atributos" title="inputTitulo">
+    <p class="texto" title="Este es un atributo title">Párrafo con clase y atributo.</p>
+    <div>
+        <p>Primer párrafo dentro de un div.</p>
+        <p>Segundo párrafo dentro de un div.</p>
+    </div>
+    <ul>
+        <li>Item 1</li>
+        <li class="especial">Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <p class="texto">Otro párrafo con clase para demostrar ::after.</p>
 </body>
-
 </html>
